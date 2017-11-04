@@ -9,6 +9,10 @@ class SimpleComponent extends React.Component {
     }
   }
 
+  render(){
+    return <div> I am just happy. </div>
+  }
+
 }
 
 export default SimpleComponent;
