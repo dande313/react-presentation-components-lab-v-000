@@ -9,10 +9,14 @@ class SimpleComponent extends React.Component {
     }
   }
 
-  render(){
-    return <div> I am just happy. </div>
+  handleClick = () => {
+      const heartplay = (this.state.mood === 'happy' ? 'sad' : 'happy');
+      this.setState({ mood : heartplay})
   }
 
+  render(){
+    return <div onClick={this.handleClick}>{this.state.mood}</div>;
+  }
 }
 
 export default SimpleComponent;
